@@ -1,0 +1,34 @@
+{
+  "name": "spacelisk-js",
+  "version": "0.0.1",
+  "description": "This library streamlines building ERC-4337 UserOperations and interacting with 4337 infrastructure on the lisk superchain.",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "erc4337",
+    "lisk",
+    "optimism"
+  ],
+  "author": "Anurigwo Chibuzor",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Space-lisk/spacelisk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Space-lisk/spacelisk-js/issues"
+  },
+  "homepage": "https://github.com/Space-lisk/spacelisk-js#readme",
+  "dependencies": {
+    "ethers": "^6.12.1"
+  }
+}
