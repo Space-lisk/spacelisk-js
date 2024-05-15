@@ -30,7 +30,7 @@ const address = await account.getAddress();
 console.log("address:", address);
 ```
 
-The address gotten is calculated by a default salt "0". if you want to generate more addresses you will simply need to set a salt. The account() function accepts an optional.
+The address gotten is calculated by a default salt "0". if you want to generate more addresses you will simply need to set a salt. The account() function accepts an optional salt argument.
 
 ```typescript
 const account = new AA(api_key, pk).account("1"); // passed 1 as salt
@@ -56,7 +56,7 @@ const data = await account.sendUserOp({
 console.log("hash:", data.hash)
 ```
 
-If you want to would like to use a paymaster, you can pass the paymaster address as a second argument to sendUserOp.
+If you would like to use a paymaster, you can pass the paymaster address as a second argument to sendUserOp.
 
 ```ts
 const data = await account.sendUserOp(
@@ -72,7 +72,7 @@ console.log("hash:", data.hash)
 
 ## Send a user operation ( Smart Contract )
 
-spacelisk-js ships with a helper function that builds a transaction by encoding the function data.
+spacelisk-js ships with a helper function that builds a transaction by encoding the smart contract function data.
 
 ```ts
 import { AA, encodeContractData } from "spacelisk-js"
@@ -97,7 +97,7 @@ const data = await account.sendUserOp(contractData);
 console.log("hash:", data.hash)
 ```
 
-If you want to would like to use a paymaster, you can pass the paymaster address as a second argument to sendUserOp.
+If you would like to use a paymaster, you can pass the paymaster address as a second argument to sendUserOp.
 
 ```ts
 const data = await account.sendUserOp(
